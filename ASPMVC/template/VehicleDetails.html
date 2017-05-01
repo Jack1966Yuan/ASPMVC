@@ -1,0 +1,63 @@
+﻿<div>
+    <h4 ng-hide="detail == null || detail == undefined">Vehicle Detail</h4>
+</div>
+
+<div ng-repeat="det in detail" ng-hide="detail == null || detail == undefined">
+    <div class="row" >
+        <div class="col-md-4">
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr><th>Item Name</th><th>Value</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Year</td>
+                        <td>{{det.Year}}</td>
+                    </tr>
+                    <tr>
+                        <td>Make</td>
+                        <td>{{det.Make}}</td>
+                    </tr>
+                    <tr>
+                        <td>Model</td>
+                        <td>{{det.Model}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-4">
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr><th>Item Name</th><th>Value</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Days_used</td>
+                        <td>{{det.Days_used}}</td>
+                    </tr>
+                    <tr>
+                        <td>Use</td>
+                        <td>{{det.Use}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-4">
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr><th>Item Name</th><th>Value</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Distance</td>
+                        <td>{{det.Distance}}</td>
+                    </tr>
+                    <tr>
+                        <td>Annual_distance</td>
+                        <td>{{det.Annual_distance}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

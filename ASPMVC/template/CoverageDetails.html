@@ -1,0 +1,78 @@
+﻿<div>
+    <h4 ng-hide="detail == null || detail == undefined">Coverage Detail</h4>
+</div>
+
+<div class="row" ng-hide="detail == null || detail == undefined">
+    <div class="col-md-4">
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr><th>Item Name</th><th>Value</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Months_insured</td>
+                    <td>{{detail.Months_insured}}</td>
+                </tr>
+                <tr>
+                    <td>Has_coverage</td>
+                    <td>{{detail.Has_coverage}}</td>
+                </tr>
+                <tr>
+                    <td>Type</td>
+                    <td>{{detail.Type}}</td>
+                </tr>
+                <tr>
+                    <td>Bodilyinjury_person</td>
+                    <td>{{detail.Bodilyinjury_person}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="col-md-4">
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr><th>Item Name</th><th>Value</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Bodilyinjury_accident</td>
+                    <td>{{detail.Bodilyinjury_accident}}</td>
+                </tr>
+                <tr>
+                    <td>Deductible</td>
+                    <td>{{detail.Deductible}}</td>
+                </tr>
+                <tr>
+                    <td>Propertydamage</td>
+                    <td>{{detail.Propertydamage}}</td>
+                </tr>
+                <tr>
+                    <td>Expiration_date</td>
+                    <td>{{detail.Expiration_date}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-md-4">
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr><th>Item Name</th><th>Value</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Expiration_days_remaining</td>
+                    <td>{{detail.Expiration_days_remaining}}</td>
+                </tr>
+                <tr>
+                    <td>DtgExpirationDate</td>
+                    <td>{{detail.DtgExpirationDate}}</td>
+                </tr>
+                <tr>
+                    <td>Former_insurer</td>
+                    <td>{{detail.Former_insurer}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
